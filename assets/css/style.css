@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+/*
+font-family: 'Rubik', sans-serif;
+ */
+
+:root {
+   --theme-color: #E91C25;
+   --text-color: #222222;
+   --heading-color: #222222;
+}
+.theme-color{
+   color: var(--theme-color) !important;
+}
+* {
+   padding: 0;
+   margin: 0;
+}
+html,
+body {
+   overflow-x: hidden;
+   position: relative;
+}
+body {
+   font-family: 'Rubik', sans-serif;
+   font-weight: normal;
+   font-style: normal;
+   color: var(--text-color);
+   font-size: 13px;
+   background-color: #EFEFEF;
+   line-height: 1.35;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-family: 'Rubik', sans-serif;
+   color: var(--heading-color);
+   margin-bottom: 15px;
+   font-weight: 700;
+}
+h1 {font-size: 55px;}
+h2 {font-size: 44px;}
+h3 {font-size: 34px;}
+h4 {font-size: 26px;}
+h5 {font-size: 18px;}
+h6 {font-size: 13px;}
+
+p {
+   margin-bottom: 15px;
+}
+img {
+   max-width: 100%;
+   transition: 0.3s;
+}
+a {
+   text-decoration: none;
+}
+a,
+button {
+   transition: 0.3s ease;
+   color: inherit;
+   outline: medium none;
+}
+a:hover{
+   color: var(--theme-color);
+}
+button:focus,
+input:focus,
+textarea:focus {
+   outline: 0;
+}
+ul {
+   margin: 0px;
+   padding: 0px;
+}
+li {
+   list-style: none;
+}
+*::-moz-selection {
+   background: #007acc;
+   color: #fff;
+   text-shadow: none;
+}
+*::selection {
+   background: #007acc;
+   color: #fff;
+   text-shadow: none;
+}
+
+
+/* page */
+.mb-10{margin-bottom: 10px;}
+.page-inner{
+	padding: 30px;
+   padding-bottom: 0;
+}
+.page {
+	width: 612px;
+	margin-right: auto;
+	margin-left: auto;
+	background: #fff;
+}
+.page-title {
+   margin-bottom: 0;
+}
+.page-title h3 {
+   color: #B9B9B9;
+ }
+ .page-title h3 span {
+   background: var(--theme-color);
+   color: #fff;
+   padding: 0 .1em;
+ }
+ .contact-link li span {
+	width: 25%;
+	display: inline-block;
+	color: var(--theme-color);
+	font-weight: 700;
+}
+ .contact-link{
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+.invoice-info-table {
+	background: #EFEFEF;
+	padding: 8px;
+	text-transform: uppercase;
+	padding-top: 0;
+}
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+	--bs-table-accent-bg: #EFEFEF;
+}
+.table-striped > tbody > tr:nth-of-type(2n) {
+      background: #fff;
+}
+.table > :not(caption) > * > * {
+	padding: .3rem .5rem;
+}
+
+.invoice-info > h6 {
+	margin-right: 10%;
+}
+.bx-text {
+	display: inline-block;
+	padding: .2em .5em;
+	background: var(--theme-color);
+	color: #fff;
+}
+.item > h6 {
+	background: #F7F7F7;
+	padding: .5em 1em;
+	border-right: 1.3em solid #DDD;
+}
+.item-inner {
+	padding: 0 1em;
+}
+.cost-table {
+	padding: 0 8px;
+	background: #F7F7F7;
+}
+.cost-table table tr {
+	--bs-table-accent-bg: #fff !important;
+}
+.cost-table table tr td:nth-child(2n){
+	--bs-table-accent-bg: #F7F7F7 !important;
+}
+.cost-table table tr:first-child,
+.cost-table table tr:last-child {
+	--bs-table-accent-bg: #F7F7F7 !important;
+}
+.total-table table tr:first-child{
+	--bs-table-accent-bg: #F7F7F7;
+}
+.total-table table tr:last-child th{
+   color: #fff;
+	--bs-table-accent-bg: #E91C25;
+}
+.total-table table tr:last-child th:first-child{
+	--bs-table-accent-bg: transparent;
+}
+.total-table table tr:nth-last-child(2) th{
+	--bs-table-accent-bg: #FBFBFB;
+}
+.total-table table tr:nth-last-child(2) th:first-child{
+	--bs-table-accent-bg: transparent;
+}
+.customer-table > h6 {
+	display: inline-block;
+	background: #EFEFEF;
+	padding: .3em .7em;
+}
+.customer-table table tr:first-child th{
+   border: 1px solid #C0C0C0;
+}
+footer {
+	background: var(--theme-color);
+	color: #fff;
+	font-weight: 500;
+	padding: .8em 30px;
+}
